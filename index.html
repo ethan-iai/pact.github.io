@@ -3,518 +3,916 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <title>PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies</title>
+  <meta name="title" content="PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation">
+  <meta name="description" content="PACT aligns pretrained diffusion policies with physical constraints, reducing safety violations by 31.0% and improving embodied task success by 30.7%.">
+  <meta name="keywords" content="PACT, Diffusion Policies, Safety Alignment, Physical Safety, Robotic Manipulation, Post-Training, Embodied Intelligence">
+  <meta name="author" content="Lingxuan Wu, Zijian Zhu, Lizhong Wang, Chengyang Ying, Huayu Chen, Xiao Yang, Fangming Liu, Jun Zhu">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+  <meta name="theme-color" content="#0b1020">
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="PACT Project">
+  <meta property="og:title" content="PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation">
+  <meta property="og:description" content="PACT aligns pretrained diffusion policies with physical constraints, reducing safety violations by 31.0% and improving embodied task success by 30.7%.">
+  <meta property="og:url" content="https://ethan-iai.github.io/pact.github.io/">
+  <meta property="og:image" content="https://ethan-iai.github.io/pact.github.io/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="PACT project preview">
+  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Lingxuan Wu">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Diffusion Policy">
+  <meta property="article:tag" content="Safety Alignment">
+  <meta property="article:tag" content="Embodied Manipulation">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies">
+  <meta name="twitter:description" content="Post-training physical safety alignment for diffusion policies in embodied manipulation.">
+  <meta name="twitter:image" content="https://ethan-iai.github.io/pact.github.io/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PACT project preview">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta name="citation_title" content="PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation">
+  <meta name="citation_author" content="Wu, Lingxuan">
+  <meta name="citation_author" content="Zhu, Zijian">
+  <meta name="citation_author" content="Wang, Lizhong">
+  <meta name="citation_author" content="Ying, Chengyang">
+  <meta name="citation_author" content="Chen, Huayu">
+  <meta name="citation_author" content="Yang, Xiao">
+  <meta name="citation_author" content="Liu, Fangming">
+  <meta name="citation_author" content="Zhu, Jun">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Proceedings of the 43rd International Conference on Machine Learning">
+  <meta name="citation_pdf_url" content="https://ethan-iai.github.io/pact.github.io/static/pdfs/paper.pdf">
 
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation",
+    "description": "PACT aligns pretrained diffusion policies with physical constraints, reducing safety violations by 31.0% and improving embodied task success by 30.7%.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Lingxuan Wu"},
+      {"@type": "Person", "name": "Zijian Zhu"},
+      {"@type": "Person", "name": "Lizhong Wang"},
+      {"@type": "Person", "name": "Chengyang Ying"},
+      {"@type": "Person", "name": "Huayu Chen"},
+      {"@type": "Person", "name": "Xiao Yang"},
+      {"@type": "Person", "name": "Fangming Liu"},
+      {"@type": "Person", "name": "Jun Zhu"}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+    "publisher": {"@type": "Organization", "name": "International Conference on Machine Learning"},
+    "datePublished": "2026-01-01",
+    "url": "https://ethan-iai.github.io/pact.github.io/",
+    "image": "https://ethan-iai.github.io/pact.github.io/static/images/social_preview.png",
+    "keywords": ["diffusion policy", "robotics", "safety alignment", "embodied manipulation", "post-training"],
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        macros: {
+          vs: "\\mathbf{s}",
+          va: "\\mathbf{a}"
+        }
       },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+      svg: {
+        fontCache: 'global'
       }
-    ]
-  }
+    };
   </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --bg-soft: #111827;
+      --card: rgba(17, 24, 39, 0.86);
+      --card-strong: rgba(17, 24, 39, 0.96);
+      --line: rgba(148, 163, 184, 0.18);
+      --text: #f8fafc;
+      --muted: #a8b3c7;
+      --blue: #60a5fa;
+      --cyan: #60a5fa;
+      --green: #60a5fa;
+      --shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+      --radius: 22px;
+      --max: 1040px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--cyan); }
+    img, video { max-width: 100%; display: block; }
+
+
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+    .hero { padding: 56px 0 42px; position: relative; text-align: left; }
+    .hero-grid { max-width: var(--max); margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #bfdbfe;
+      border: 1px solid rgba(96, 165, 250, 0.34);
+      background: rgba(96, 165, 250, 0.1);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 6.4vw, 5rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+    }
+    .subtitle {
+      margin: 10px 0 0;
+      max-width: 980px;
+      color: #cbd5e1;
+      font-size: clamp(1rem, 2vw, 1.28rem);
+      font-weight: 700;
+      line-height: 1.45;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff, #bfdbfe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .authors {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+    .authors a { color: #dce8ff; border-bottom: 1px solid rgba(112, 165, 255, 0.38); }
+    .venue { margin-top: 8px; color: #dce8ff; font-weight: 700; }
+    .spotlight { color: #bfdbfe; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.35;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+    .button.primary { background: var(--blue); color: #07111f; border: 0; }
+
+
+    section { padding: 64px 0; }
+    .section-title { margin: 0 0 24px; font-size: clamp(2rem, 3.8vw, 3.2rem); letter-spacing: -0.05em; line-height: 1; }
+    .section-kicker { color: var(--cyan); font-weight: 800; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.12em; font-size: 1.0rem; }
+    .lead { color: #d8e2f7; font-size: 1.04rem; }
+    .abstract-simple {
+      max-width: var(--max);
+    }
+    .abstract-simple .section-title {
+      margin-bottom: 18px;
+    }
+    .abstract-simple p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      line-height: 1.72;
+    }
+    .term-highlight {
+      color: #bfdbfe;
+      font-weight: 800;
+    }
+    .term-subhighlight {
+      /* color: #bfdbfe; */
+      font-weight: 800;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .bullets { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+    .bullets li {
+      position: relative;
+      padding: 16px 16px 16px 46px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      color: #dce7f8;
+    }
+    .bullets li::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 22px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .metric {
+      padding: 24px;
+      min-height: 170px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+    }
+    .metric .num { font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: 1; font-weight: 900; letter-spacing: -0.07em; color: var(--green); }
+    .metric .label { margin-top: 10px; color: #dbe7ff; font-weight: 800; }
+    .metric p { margin: 8px 0 0; color: var(--muted); }
+    .details-block {
+      margin-top: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .details-block summary {
+      cursor: pointer;
+      min-height: 54px;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #e5edff;
+      font-size: 1.22rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      list-style: none;
+    }
+    .details-block summary::-webkit-details-marker {
+      display: none;
+    }
+    .details-block summary::after {
+      content: "+";
+      color: var(--blue);
+      font-weight: 900;
+    }
+    .details-block[open] summary::after {
+      content: "-";
+    }
+    .details-content {
+      padding: 12px 28px 28px;
+    }
+    .details-image-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .details-combined {
+      width: 74%;
+      margin: 0 auto 30px;
+    }
+    .details-image-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 16px;
+      background: #ffffff;
+      padding: 22px 22px 12px;
+      overflow: hidden;
+    }
+    .details-image {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    .details-image-row .details-image {
+      margin: 0;
+    }
+    .details-image:last-child {
+      margin-bottom: 0;
+    }
+    .details-image img {
+      width: 86%;
+      max-height: 420px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 16px;
+      background: #ffffff;
+      padding: 10px;
+    }
+    .details-image img.details-wide-image {
+      width: 94%;
+      max-height: 520px;
+    }
+    .details-combined .details-image img {
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      background: transparent;
+    }
+    .details-image figcaption {
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      text-align: left;
+    }
+    .details-row-caption {
+      margin: 10px 0 0;
+      color: #94a3b8;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      text-align: left;
+    }
+
+    .method-card h3, .result-card h3 { margin: 0 0 10px; font-size: 1.18rem; }
+    .method-card p, .result-card p { color: var(--muted); margin: 0; }
+    .method-stack {
+      display: grid;
+      gap: 16px;
+    }
+    .method-stack > .card.method-section,
+    .method-stack > .with-footnotes {
+      margin: 0;
+    }
+    .method-stack > .with-footnotes {
+      margin-bottom: 12px;
+    }
+    .method-spacer {
+      height: 16px;
+    }
+    .method-section h3 {
+      margin: 0 0 12px;
+      color: #e5edff;
+      font-size: 1.22rem;
+      letter-spacing: -0.02em;
+    }
+    .method-section p {
+      margin: 0 0 12px;
+      color: #cbd5e1;
+    }
+    .method-section p:last-child {
+      margin-bottom: 0;
+    }
+    .method-section ul {
+      margin: 12px 0 14px;
+      padding-left: 1.2rem;
+      color: #cbd5e1;
+    }
+    .method-section li {
+      margin: 7px 0;
+    }
+    .method-split {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .method-figure {
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 12px;
+    }
+    .method-split .method-figure {
+      margin-top: 32px;
+      max-width: 88%;
+      justify-self: end;
+    }
+    .method-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .formulation-figure {
+      margin-top: 0;
+      max-width: 220px;
+      justify-self: end;
+    }
+    .formulation-figure img {
+      width: 100%;
+      max-height: none;
+      object-fit: contain;
+      margin: 0;
+      display: block;
+      border-radius: 10px;
+    }
+    .formulation-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 240px;
+      gap: 18px;
+      align-items: center;
+    }
+    .with-footnotes {
+      position: relative;
+    }
+    .fn-ref {
+      font-size: 0.72em;
+      vertical-align: super;
+      color: #bfdbfe;
+      font-weight: 700;
+      margin-left: 1px;
+    }
+    .footnote-side {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 24px);
+      width: 260px;
+      border-left: 1px solid rgba(148, 163, 184, 0.25);
+      padding-left: 14px;
+      display: grid;
+      gap: 12px;
+    }
+    .footnote-item {
+      font-size: 0.76rem;
+      line-height: 1.4;
+      color: #94a3b8;
+    }
+    .footnote-item a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .inline-footnotes {
+      position: static;
+      width: auto;
+      border-left: 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.25);
+      padding-left: 0;
+      padding-top: 12px;
+      margin-top: 14px;
+    }
+    .footnote-item b {
+      color: #dbeafe;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+    .vs-note {
+      display: block;
+      margin-top: 4px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .vs-label {
+      color: #bfdbfe;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+    .method-question {
+      margin: 16px 0 0;
+      padding: 14px 18px;
+      border-left: 3px solid var(--blue);
+      border-radius: 14px;
+      background: rgba(96, 165, 250, 0.08);
+      color: #dbeafe;
+      font-weight: 700;
+    }
+    .figure-placeholder {
+      min-height: 220px;
+      margin-top: 18px;
+      border: 1px dashed rgba(148, 163, 184, 0.34);
+      border-radius: 18px;
+      background:
+        linear-gradient(135deg, rgba(96, 165, 250, 0.08), transparent 48%),
+        rgba(2, 6, 23, 0.28);
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    .figure-placeholder span {
+      color: #dbeafe;
+      font-weight: 700;
+    }
+    .video-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .diagram {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-top: 18px;
+    }
+    .node {
+      min-height: 118px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      font-weight: 800;
+    }
+    .arrow { color: var(--cyan); font-size: 1.8rem; font-weight: 900; }
+
+    .video-frame {
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: #020617;
+      box-shadow: var(--shadow);
+    }
+    .video-frame video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+
+    pre {
+      margin: 0;
+      padding: 22px 88px 22px 22px;
+      overflow-x: auto;
+      border-radius: 22px;
+      background: #030712;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      color: #d9e6ff;
+      font-size: 0.92rem;
+    }
+    .citation-header { margin-bottom: 16px; }
+    .bibtex-box {
+      position: relative;
+    }
+    .copy { position: absolute; right: 12px; bottom: 12px; cursor: pointer; color: #07111f; background: var(--blue); border: 0; border-radius: 10px; padding: 8px 12px; font-weight: 900; }
+
+    footer { padding: 34px 0 48px; color: var(--muted); border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
+
+    @media (max-width: 1800px) {
+      .with-footnotes { position: static; }
+      .footnote-side {
+        position: static;
+        width: auto;
+        border-left: 0;
+        border-top: 1px solid rgba(148, 163, 184, 0.25);
+        padding-left: 0;
+        padding-top: 12px;
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero { padding-top: 54px; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .details-image-grid { grid-template-columns: 1fr; }
+      .details-image-row { grid-template-columns: 1fr; }
+      .method-split { grid-template-columns: 1fr; }
+      .method-split .method-figure { margin-top: 10px; max-width: 100%; justify-self: stretch; }
+      .formulation-layout { grid-template-columns: 1fr; }
+      .formulation-figure { max-width: 100%; justify-self: stretch; margin-top: 8px; }
+      .with-footnotes { position: static; }
+      .footnote-side { position: static; width: auto; border-left: 0; border-top: 1px solid rgba(148, 163, 184, 0.25); padding-left: 0; padding-top: 12px; }
+      .diagram { grid-template-columns: 1fr; }
+      .arrow { transform: rotate(90deg); justify-self: center; }
+    }
+  </style>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
+  <main id="top">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1><span class="gradient-text">PACT</span></h1>
+          <p class="subtitle">Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation</p>
+          <div class="authors">
+            <a href="https://ethan-iai.github.io/" target="_blank" rel="noopener">Lingxuan Wu</a>,
+            <a href="https://scholar.google.com/citations?user=1xFtL6MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Zijian Zhu</a>,
+            Lizhong Wang,
+            <a href="https://yingchengyang.github.io" target="_blank" rel="noopener">Chengyang Ying</a>,
+            <a href="https://chendrag.github.io/" target="_blank" rel="noopener">Huayu Chen</a>,
+            <a href="https://ml.cs.tsinghua.edu.cn/~xiaoyang/" target="_blank" rel="noopener">Xiao Yang</a>,
+            Fangming Liu,
+            <a href="https://ml.cs.tsinghua.edu.cn/~jun/index.shtml" target="_blank" rel="noopener">Jun Zhu</a>
+            <div class="venue">TSAIL, Tsinghua University</div>
+            <div class="eyebrow">ICML 2026 · Spotlight</div>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="static/pdfs/paper.pdf" target="_blank" rel="noopener">Paper</a>
+            <a class="button" href="https://github.com/thu-ml/PACT" target="_blank" rel="noopener">Code</a>
+            <a class="button" href="#citation">BibTeX</a>
+          </div>
+        </div>
       </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+    </header>
+
+
+    <section id="abstract">
+      <div class="container abstract-simple">
+        <div class="section-kicker">Abstract</div>
+        <!-- <h2 class="section-title">Post-training safety alignment for diffusion policies.</h2> -->
+        <h2 class="section-title"><span class="term-highlight">P</span>hysical safety <span class="term-highlight">A</span>lignment for <span class="term-highlight">C</span>onstrained <span class="term-highlight">T</span>rajectories</h2>
+        <p>Diffusion policies have achieved remarkable success in robotic manipulation, yet they often fail to satisfy strict physical constraints required 
+          for safe deployment. Existing approaches impose safety either prematurely during training or reactively via external guardrails at test time, limiting policy expressivity and overall scalability. We propose <span class="term-subhighlight">Physical safety Alignment for Constrained Trajectories (PACT)</span>, a <span class="term-highlight">self-evolving post-training framework</span> that projects pretrained diffusion policies onto constraint-feasible regions <span class="term-highlight">without accessing demonstration data or task rewards</span>. <span class="term-subhighlight">PACT</span> distills constraint gradients into the diffusion model through a reverse-KL objective with dense supervision across timesteps. It incorporates a curriculum that progressively tightens constraints while maintaining theoretically bounded policy shift and monotone improvement, mitigating the safety-performance trade-off from catastrophic forgetting. On simulated and real-world embodied manipulation benchmarks, <span class="term-subhighlight">PACT</span> reduces safety violations by 31.0% on average while improving task success by 30.7%.</p>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <section id="tldr">
+      <div class="container">
+        <div class="section-kicker">TL;DR</div>
+        <h2 class="section-title">PACT enables aligning your diffusion policies <span class="term-highlight">solely from self-rollouts</span></h2>
+        <div class="grid-2">
+          <ul class="bullets card">
+            <li><span class="term-highlight">Self-Evolving:</span> uses self-rollouts <span class="term-highlight">W/O</span> <strong>demos</strong>, <strong>rewards</strong>, or <strong>outcome annotations</strong>.</li>
+            <li><span class="term-highlight">Efficient Optimization:</span> <strong>distills</strong> constraint gradients into the policy, providing dense supervision across all diffusion timesteps.</li>
+            <li><span class="term-highlight">Curriculum alignment:</span> progressively tightens constraints to <strong>preserve task competence</strong> while improving safety.</li>
+          </ul>
+          <ul class="bullets card">
+            <li><span class="term-highlight">Foundation-model compatible:</span> <strong>Plug-and-play</strong> to any diffusion-based policies, including flow policies, VLAs, WAMs, <span class="term-highlight">W/O</span> arch. modifications</li>
+            <li><span class="term-highlight">Theoretical control:</span> bounds policy shift and ensures monotone improvement.</li>
+            <li><span class="term-highlight">Proven in practice:</span> improves both task success and safety across simulation and <strong>real-world</strong> manipulation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+    <section id="method">
+      <div class="container">
+        <div class="section-kicker">Method</div>
+        <h2 class="section-title">A <span class="term-highlight">Scalable</span> Path to Safe Robot Policies</h2>
+        <div class="method-stack">
+          <div class="card method-section">
+            <h3><span class="term-highlight">The Problem</span></h3>
+            <p>Diffusion/flow policies have become a dominant paradigm for robot manipulation, but they can still produce unsafe behaviors such as unintended collisions, unsafe grasps, or physically risky motions.</p>
+            <div class="method-question">What is the most scalable way to align robot policies for safety?</div>
+            <!-- <div class="figure-placeholder"><span>Figure placeholder:</span>&nbsp;unsafe behaviors in robot foundation policies</div> -->
+          </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+          <div class="card method-section method-split">
+            <div class="method-text">
+              <h3><span class="term-highlight">Our Key Insight</span></h3>
+              <p>Safety should be enforced during <strong>post-training</strong>, similar to how LLMs are aligned after pretraining.</p>
+              <ul>
+                <li>
+                  Preserve capabilities learned from large-scale pre-training.
+                  <span class="vs-note"><span class="vs-label">v.s.</span>train/develop-time methods that require inductive bias or training-pipeline changes.</span>
+                </li>
+                <li>
+                  Introduce zero additional cost at deployment time.
+                  <span class="vs-note"><span class="vs-label">v.s.</span>test-time guardrails which cost grows with fleet size.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="method-figure">
+              <img src="static/images/pact/post-training.png" alt="Pretraining capabilities plus post-training safety alignment">
             </div>
           </div>
+
+          <div class="with-footnotes">   
+          <div class="card method-section">
+            <h3><span class="term-highlight">A Scalable Formulation</span></h3>
+            <div class="formulation-layout">
+            <div class="formulation-text">
+            <p>Most existing approaches require:</p>
+            <ul>
+              <li>Safety-specific demonstrations</li>
+              <span class="vs-note"><span class="vs-label">✗</span>Expensive to collect.</span>
+              <li>Preference or outcome annotation</li>
+              <span class="vs-note"><span class="vs-label">✗</span>Requires human annotators.</span>
+            </ul>
+            <p>Instead, We formulate <strong>safety alignment</strong> as <strong>regularized projection</strong> of a pretrained policy $\mu_{\phi}$ into a safe policy set $\Pi_{\text{safe}}$ defined by physical constraints $\mathcal{C}=\{x \in \mathbb{R}^d \mid c_k(s, a) \leq 0\}$:</p>
+            $$
+            \begin{aligned}
+            \Pi_{\mathrm{safe}}
+            =
+            \Big\{
+            \pi:
+            \mathbb{E}_{(s, a) \sim d^\pi}c_k(s, a)
+            \le d_k,\;
+            \forall k 
+            \Big\},
+            \end{aligned}
+            $$
+            <p>which can be reduced to solve:<span class="fn-ref">1</span></p>
+$$
+\min_{\theta} \underbrace{\mathbb{E}_{(s, a) \sim d^\pi}}_{\text{on-policy}} \Big[\underbrace{D_{\text{KL}}\left( \pi(\cdot \mid \vs) \| \mu_{\phi}(\cdot \mid \vs) \right)}_{\begin{array}{@{}c@{}}\text{avoid forgetting given no}\\\text{pre-trained datasets and utility signals}\end{array}}
++ \underbrace{\sum_{k=1}^m \lambda_k (c_k(s, a) - d_k)}_{\text{reduce constraints violation}} \Big].
+$$
+
+<p>
+  then, PACT is nearly <span class="term-highlight">self-evolving</span> only requring two ingredients:
+  </p>
+  
+  <ul>
+    <li>
+      <strong>Self-rollouts</strong>, i.e. learn from experiences.
+    </li>
+  
+    <li>
+      <strong>Physical constraints</strong>, automatically computed from environment states<span class="fn-ref">2</span>
+    </li>
+  </ul>
+            </div>
+  <div class="method-figure formulation-figure">
+    <img src="static/images/pact/formulation.png" alt="PACT scalable formulation figure">
+  </div>
+            </div>
+  <aside class="footnote-side" aria-label="Method footnotes">
+    <div class="footnote-item"><b>1</b>Similar to Regularized RL (<a href="https://direct.mit.edu/neco/article-abstract/9/2/271/6042/Using-Expectation-Maximization-for-Reinforcement" target="_blank" rel="noopener">Dayan &amp; Hinton, 1997</a>; <a href="https://arxiv.org/abs/1707.06347" target="_blank" rel="noopener">Schulman et al., 2017</a>).</div>
+    <div class="footnote-item"><b>2</b>The environment-state pipeline only requires one-time setup. Constraint evaluation is performed only during post-training and incurs no additional cost at deployment</div>
+    <!-- <div class="footnote-item"><b>3</b>Empirical efficiency comparison versus PPO-style diffusion RL.</div>
+    <div class="footnote-item"><b>4</b>No additional inference-time modules or safety guardrails required.</div> -->
+  </aside>
+  </div>
+
+    <div class="method-spacer" aria-hidden="true"></div>
+
+    <!-- <div class="card method-section"> -->
+      <div class="with-footnotes">
+      <div class="card method-section">
+        <h3><span class="term-highlight">Distillation for Efficient Optimization</span></h3>
+        <p>A key observation is that the safety alignment objective admits an analytical optimal score function $\epsilon^*(a_t, s, t)$, namely the <span class="term-highlight">implict safe teacher</span>. PACT directly <span class="term-highlight">distills from this implcit teacher</span><span class="fn-ref">3</span>.</p>
+        <ul>
+          $$
+          \begin{aligned}
+          \min_{\theta}\;& \mathbb{E}_{t, \epsilon, (s, a) \sim d^{\pi_{\theta}}} \| \epsilon_{\theta}(a_t, s, t) - \epsilon^*(a_t, s, t)  \|^2, \\
+          \text{with}& \quad \epsilon^*(\va_t, \vs, t) 
+          \triangleq \epsilon_{\phi}(\va_t, \vs, t) -\sum_{k=1}^m\lambda_k\nabla_{\va_t}c_{k,t}(\vs, \va_t) / \sigma_t \quad \text{(implicit safe teacher)}.
+          \end{aligned}
+          $$
+
+          <li><span class="term-highlight">Dense Supervision</span> at every denoising step, achieving ~5x higher optimization efficiency than PPO-style diffusion RL.</li>
+          <li><span class="term-highlight">Solver Flexibility</span> enable efficent sampling with any solvers during rollout.</li>
+        </ul>
+        <div class="method-figure" style="margin-top: 14px;">
+          <img src="static/images/pact/framework.png" alt="Analytical teacher distillation versus PPO-style diffusion RL">
+        </div>
+        <aside class="footnote-side" aria-label="Method footnotes">
+        <!-- <div class="footnote-item"><b>1</b>Similar to Regularized RL (<a href="https://direct.mit.edu/neco/article-abstract/9/2/271/6042/Using-Expectation-Maximization-for-Reinforcement" target="_blank" rel="noopener">Dayan &amp; Hinton, 1997</a>; <a href="https://arxiv.org/abs/1707.06347" target="_blank" rel="noopener">Schulman et al., 2017</a>).</div>
+        <div class="footnote-item"><b>2</b>The environment-state pipeline only requires one-time setup. Constraint evaluation is performed only during post-training and incurs no additional cost at deployment</div> -->
+        <div class="footnote-item"><b>3</b>One simple illustration is <a href="https://thinkingmachines.ai/blog/on-policy-distillation/" target="_blank" rel="noopener">On-policy Distillation (OPD)</a> for diffusion policies. See <a href="https://arxiv.org/abs/2405.20555" target="_blank" rel="noopener"> Diffusion Actor Critc (DAC)</a> and <a href="https://arxiv.org/abs/2601.14234" target="_blank" rel="noopener">Q-learning with Adjoint Matching (QAM)</a> for more rigourous analysis. </div>
+        <!-- <div class="footnote-item"><b>4</b>No additional inference-time modules or safety guardrails required.</div> -->
+        </aside>
+      </div>
+      </div>
+          <!-- </div> -->
+
+
+
+          <!-- <div class="card method-section">
+            <h3>Does It Work?</h3>
+            <p><span class="term-highlight">PACT</span> consistently improves both safety and task success across simulation and real-world robot manipulation.</p>
+            <p>Most notably, it enables safer execution of challenging precision tasks such as GPU Assembly while maintaining strong task performance.</p>
+            <p class="video-note">Real-world videos are shown below.</p>
+            <div class="figure-placeholder"><span>Figure placeholder:</span>&nbsp;simulation and real-world results, including GPU Assembly</div>
+          </div> -->
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section id="results">
+      <div class="container">
+        <div class="section-kicker">Results</div>
+        <h2 class="section-title">Safer Policies, <span class="term-highlight">Better Task Success</span></h2>
+        <div class="grid-3">
+          <div class="metric">
+            <div class="num">31.0%</div>
+            <div class="label">Average safety violation reduction</div>
+            <p>Across simulated and real-world robotic manipulation.</p>
+          </div>
+          <div class="metric">
+            <div class="num">30.7%</div>
+            <div class="label">Average task success improvement</div>
+            <p>PACT resolves the usual safety-performance tradeoff.</p>
+          </div>
+          <div class="metric">
+            <div class="num">0</div>
+            <div class="label">External annotations or demonstrations</div>
+            <p>Alignment runs near self-evolution.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+        <h2 class="section-title" style="margin-top: 22px;">Real-World Case: <span class="term-highlight">GPU Assembly</span></h2>
         
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+        <div class="grid-2">
+          <div class="video-frame"><video src="static/videos/banner_video.mp4" autoplay muted loop playsinline controls preload="metadata"></video></div>
+          <div class="video-frame"><video src="static/videos/carousel1.mp4" autoplay muted loop playsinline controls preload="metadata"></video></div>
+        </div>
 
+        <p>GPU assembly requiring millimeter-level precision, <strong>PACT</strong> enables emergent fine-grained correction behaviors that adjust trajectories into feasible regions, ensuring accurate and safe insertions.</p>
 
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+        <details class="details-block">
+          <summary>Detailed Results</summary>
+          <div class="details-content">
+            <div class="details-image-grid">
+              <div class="details-combined">
+                <div class="details-image-row">
+                  <figure class="details-image">
+                    <img src="static/images/pact/success-rate.png" alt="PACT success rate results">
+                  </figure>
+                  <figure class="details-image">
+                    <img src="static/images/pact/safe-rate.png" alt="PACT safe rate results">
+                  </figure>
+                </div>
+                <p class="details-row-caption">Training efficiency comparison with on-policy baselines. Success Rate (left) and Safe Rate (right), are averaged over four tasks across training iterations. Our method demonstrates the most training efficiency and stability.</p>
+              </div>
+              <figure class="details-image">
+                <img class="details-wide-image" src="static/images/pact/robotwin_table.png" alt="RoboTwin detailed result table">
+                <figcaption>Task success and safety across bimanual manipulation benchmarks in RoboTwin.
+                  We report Success Rate (succ.) and Safe Rate (safe) for each base policy before and after post-training with PACT.</figcaption>
+              </figure>
+              <figure class="details-image">
+                <img class="details-wide-image" src="static/images/pact/real_qual.png" alt="Real-world qualitative results">
+                <figcaption>Qualitative results of real world evaluation. base policy (top) v.s. policy aligned by PACT (bottom) across four manipulation tasks. PACT reduces unsafe contacts and improves task completion by correcting key failure modes: avoiding poking to securely grasp the egg (Transfer Egg); aligning the gripper with the nail head, preventing lateral or tilted insertion (Nail Insertion); eliminating bottle poking and cup-rim misalignment (Pour Water); avoiding poking heat-sink and corrects installation misalignment (GPU Assembly).</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+        <!-- <div class="grid-2" style="margin-top: 22px;">
+          <div class="card result-card">
+            <h3>Simulation + real-world evaluation</h3>
+            <p>PACT is evaluated on manipulation settings that demand physical feasibility, including tasks where millimeter-level correction behavior is necessary.</p>
+          </div>
+          <div class="card result-card">
+            <h3>Emergent correction behavior</h3>
+            <p>Aligned policies adjust trajectories toward feasible regions, enabling safer insertions and reducing unsafe rollouts before deployment.</p>
+          </div> -->
         </div>
       </div>
+
+    </section>
+
+    <!-- <section id="demos">
+      <div class="container">
+        <div class="section-kicker">Demo</div>
+        <h2 class="section-title">Embodied manipulation rollouts.</h2>
+       
+      </div>
+    </section> -->
+
+    <section id="citation">
+      <div class="container">
+        <div class="citation-header">
+          <div>
+            <div class="section-kicker">Citation</div>
+            <h2 class="section-title" style="margin-bottom: 0;">BibTeX</h2>
+          </div>
+        </div>
+        <div class="bibtex-box">
+        <pre><code id="bibtex">@inproceedings{wu2026pact,
+  title={PACT: Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation},
+  author={Wu, Lingxuan and Zhu, Zijian and Wang, Lizhong and Ying, Chengyang and Chen, Huayu and Yang, Xiao and Liu, Fangming and Zhu, Jun},
+  booktitle={Proceedings of the 43rd International Conference on Machine Learning},
+  year={2026},
+  url={https://github.com/thu-ml/PACT}
+}</code></pre>
+          <button class="copy" type="button" onclick="copyBibTeX()">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <!-- <span>PACT · Self-Evolving Physical Safety Alignment for Diffusion Policies in Embodied Manipulation</span> -->
+      <span>Page designed by <a href="https://github.com/ethan-iai" target="_blank" rel="noopener">Lingxuan Wu</a>.</span>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  <script>
+    function copyBibTeX() {
+      const text = document.getElementById('bibtex').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const button = document.querySelector('.copy');
+        const original = button.textContent;
+        button.textContent = 'Copied';
+        setTimeout(() => { button.textContent = original; }, 1400);
+      });
+    }
+  </script>
+</body>
+</html>
