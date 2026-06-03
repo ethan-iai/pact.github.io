@@ -549,10 +549,11 @@
       border-radius: 26px;
       overflow: hidden;
       border: 1px solid rgba(148, 163, 184, 0.18);
-      background: #020617;
+      padding: 8px;
+      background: linear-gradient(135deg, rgba(23, 37, 84, 0.94), rgba(37, 99, 235, 0.46));
       box-shadow: var(--shadow);
     }
-    .video-frame video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+    .video-frame video { width: 100%; height: auto; object-fit: contain; border-radius: 18px; }
 
     pre {
       margin: 0;
@@ -818,10 +819,7 @@ $$
 
         <h2 class="section-title" style="margin-top: 22px;">Real-World Case: <span class="term-highlight">GPU Assembly</span></h2>
         
-        <div class="grid-2">
-          <div class="video-frame"><video src="static/videos/banner_video.mp4" autoplay muted loop playsinline controls preload="metadata"></video></div>
-          <div class="video-frame"><video src="static/videos/carousel1.mp4" autoplay muted loop playsinline controls preload="metadata"></video></div>
-        </div>
+        <div class="video-frame"><video src="static/videos/gpu_assembly_3x_480p.mp4" autoplay muted loop playsinline controls preload="metadata"></video></div>
 
         <p>GPU assembly requiring millimeter-level precision, <strong>PACT</strong> enables emergent fine-grained correction behaviors that adjust trajectories into feasible regions, ensuring accurate and safe insertions.</p>
 
